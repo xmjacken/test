@@ -1,0 +1,27 @@
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+$(function(){
+$(".navbar-nav li a").click(function(){
+        $('.navbar-nav li').removeClass('active');        
+        $(this).parent().addClass('active');
+   })
+})
+</script>
+<style type="text/css">
+.atest{font-size: 24px}
+.aaactive{font-size: 12px;color: red}
+</style>
+</head>
+<ul class="nav navbar-nav" id="topmenu">
+      <li><a href="#" >积分榜</a></li>
+      <li class="active"><a href="#">回答榜 </a></li>
+      <li><a href="#" >提问榜</a></li>
+      <li><a href="#" >满意榜</a></li>
+</ul>
+
+
+</html>
